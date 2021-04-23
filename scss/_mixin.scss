@@ -20,5 +20,29 @@
         background: rgba($primary-color, $background-opacity);
       }
     }
-  } 
+  }
+}
+
+@mixin media-sm {
+  @media screen and(max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and(min-width:769px) and(max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin media-xlg {
+  @media screen and(min-width:1171px) {
+    @content;
+  }
 }

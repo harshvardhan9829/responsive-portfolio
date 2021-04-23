@@ -3,8 +3,9 @@
 }
 
 body {
-  @include background;
   background: $primary-color;
+  @include background;
+
   color: #fff;
   height: 100%;
   margin: 0;
