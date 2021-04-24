@@ -7,3 +7,12 @@ $background-opacity: 0.9;
 
 $primary-color: #444;
 $seconday-color: #eece1a;
+
+// functions
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
